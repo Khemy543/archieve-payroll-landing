@@ -407,7 +407,58 @@ footer .content .footer-menu-content {
 }
 
 /* responsiveness */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .hero-content-wrap {
+    flex-direction: column;
+    column-gap: 0;
+  } */
+  .text-xl {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .text-lg {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .text-md {
+    font-size: 24px;
+  }
+
+  .text-sm {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .hero-content {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .hero-image-wrapper {
+    display: none;
+  }
+
+  .hero-content-wrap {
+    column-gap: 40px;
+  }
+
+  .hero-mobile-wrapper {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -320px;
+    max-width: 1024px;
+    padding: 0 16px;
+  }
+  .hero-image-mobile {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .app-input {
     flex-direction: column;
     row-gap: 10px;
@@ -469,7 +520,7 @@ footer .content .footer-menu-content {
     padding: 0 16px;
   }
 
-  .hero-image {
+  .hero-image-wrapper {
     display: none;
   }
 
@@ -514,7 +565,8 @@ footer .content .footer-menu-content {
     padding: 0 16px;
   }
 
-  .users-section .text-lg, .users-section .desc {
+  .users-section .text-lg,
+  .users-section .desc {
     text-align: center;
     width: 100%;
   }
