@@ -121,21 +121,26 @@ app-input input::placeholder {
 }
 
 .hero {
+  height: calc(100% - 70px);
   max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
   height: 100%;
   padding: 0 16px;
   z-index: 20;
+  position: relative;
 }
 
-.hero-content {
+.hero-content-wrap {
   width: 100%;
   display: flex;
   column-gap: 94px;
-  margin-top: 91px;
-  height: calc(100% - 70px);
-  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  height: 70%;
 }
 
 .hero-text-content {
@@ -152,8 +157,9 @@ app-input input::placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -298px;
+  bottom: 70px;
   padding: 0 16px;
+  height: 30%;
 }
 
 .hero-image {
@@ -438,7 +444,7 @@ footer .content .footer-menu-content {
     padding: 15px 15px 15px 25px;
   }
 
-  .hero-content {
+  .hero-content-wrap {
     flex-direction: column;
     column-gap: 0;
   }
@@ -448,7 +454,7 @@ footer .content .footer-menu-content {
   }
 
   .hero-image-wrapper {
-    bottom: -20px;
+    bottom: 0px;
   }
 
   .hero-image {
