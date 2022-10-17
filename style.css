@@ -128,7 +128,6 @@ app-input input::placeholder {
   height: 100%;
   padding: 0 16px;
   z-index: 20;
-  position: relative;
 }
 
 .hero-content-wrap {
@@ -138,9 +137,8 @@ app-input input::placeholder {
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
   height: 70%;
+  padding-top: 91px;
 }
 
 .hero-text-content {
@@ -154,16 +152,17 @@ app-input input::placeholder {
 .hero-image-wrapper {
   max-width: 1024px;
   margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 70px;
+  position: relative;
   padding: 0 16px;
   height: 30%;
 }
 
 .hero-image {
   margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -150px;
 }
 
 .hero-image-mobile {
@@ -468,6 +467,10 @@ footer .content .footer-menu-content {
   .hero-image-mobile {
     display: block;
     width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
   }
 
   .services-section {
