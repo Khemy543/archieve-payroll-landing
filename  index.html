@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,11 +16,11 @@
   </head>
   <body>
     <main class="main">
-      <img
+      <!-- <img
         src="./assets/images/hero-bg.svg"
         alt="background"
         class="hero-background"
-      />
+      /> -->
       <nav>
         <img src="./assets/images/logo.png" alt="archieve" class="logo" />
 
@@ -44,10 +45,10 @@
                 sending remittance reports. We’re here to help you get rid of
                 your headache.
               </p>
-              <div class="app-input">
-                <input type="email" placeholder="Enter your company email" />
-                <button class="app-button">Join Waitlist</button>
-              </div>
+              <form class="app-input">
+                <input type="email" placeholder="Enter your company email" required />
+                <button type="submit" class="app-button">Join Waitlist</button>
+              </form>
             </div>
           </div>
         </div>
@@ -74,7 +75,7 @@
           <h4 class="text-lg">
             Choose achievePayroll,<br />empower your staff
           </h4>
-          <p class="text-sm">
+          <p class="text-sm desc">
             Our ESS app lets your team manage their payroll details from their
             phone – without you having to lift a finger. Now your staff can:
           </p>
@@ -129,10 +130,10 @@
             </div>
           </div>
 
-          <div class="app-input">
-            <input type="text" placeholder="Enter your company email" />
-            <button class="app-button">Join Waitlist</button>
-          </div>
+          <form class="app-input">
+            <input type="text" placeholder="Enter your company email" required/>
+            <button type="submit" class="app-button">Join Waitlist</button>
+          </form>
         </div>
         <div class="section-right">
           <img src="./assets/images/service.png" alt="service" />
@@ -142,7 +143,7 @@
 
     <section>
       <div class="support-section">
-        <div class="section-left">
+        <div class="section-left desktop">
           <h5 class="text-md">Support, when you need it</h5>
 
           <p class="text-sm">
@@ -153,6 +154,21 @@
 
           <img src="./assets/images/woman.png" alt="" style="width: 100%" />
         </div>
+
+        <div class="section-left mobile">
+          <div class="text-section">
+            <h5 class="text-md">Support,<br/> when you need it</h5>
+
+            <p class="text-sm">
+              We’ve built achievePayroll so you can run payroll all by yourself.
+              However, if you need help, our team of in-house payroll
+              professionals is ready to jump on a call with you to assist you.
+            </p>
+          </div>
+
+          <img src="./assets/images/woman.png" alt="" style="width: 100%" />
+        </div>
+
         <div class="section-right">
           <h5 class="text-md">Get valuable HR and Payroll Insights</h5>
 
@@ -177,10 +193,10 @@
           <h5 class="text-md">
             Be among the first to know when we launch in Nigeria
           </h5>
-          <div class="app-input">
-            <input type="text" placeholder="Enter your company email" />
-            <button class="app-button">Join Waitlist</button>
-          </div>
+          <form class="app-input">
+            <input type="text" placeholder="Enter your company email" required/>
+            <button type="submit" class="app-button">Join Waitlist</button>
+          </form>
         </div>
       </div>
     </div>
@@ -192,7 +208,7 @@
         staff
       </p>
 
-      <div class="user-section-content">
+      <div class="users-section-content">
         <div class="section-left">
           <div class="youtube-video">
             <iframe
@@ -221,7 +237,7 @@
           </p>
 
           <div class="client">
-            <div class="image"></div>
+            <img src="./assets/images/client-image.png" class="image" alt="client"/>
             <div class="client-info">
               <h5 class="text-sm">Divine Amekudzi, Ghana</h5>
               <p class="text-xs">
@@ -238,8 +254,8 @@
 
         <div class="footer-menu-content">
           <p class="text-xs">Contact us</p>
-          <p class="text-xs">Privacy policy</p>
-          <p class="text-xs">Terms and conditions</p>
+          <a target="_blank" href="https://achievepayroll.com/privacy" class="text-xs">Privacy policy</a>
+          <a target="_blank" href="https://achievepayroll.com/terms" class="text-xs">Terms and conditions</a>
         </div>
       </div>
     </footer>
