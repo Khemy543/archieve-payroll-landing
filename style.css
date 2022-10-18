@@ -707,6 +707,8 @@ footer .content .footer-menu-content {
 
   .users-section .users-section-content .youtube-video {
     width: 100%;
+    height: 340px;
+    border-radius: 20px;
   }
 
   footer .content {
