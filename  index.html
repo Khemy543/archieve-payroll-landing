@@ -41,8 +41,9 @@
                   validating and sending remittance reports. We’re here to help
                   you get rid of your headache.
                 </p>
-                <form class="app-input" name="waitlist" netlify>
+                <form id="hero-form" class="app-input" name="waitlist">
                   <input
+                    id="hero-email"
                     type="email"
                     placeholder="Enter your company email"
                     name="email"
@@ -158,8 +159,9 @@
           <h5 class="text-md">
             Be among the first to know when we launch in Nigeria
           </h5>
-          <form class="app-input" name="waitlist" netlify>
+          <form id="join-waitlist" class="app-input" name="waitlist">
             <input
+              id="waitlist-email"
               type="text"
               placeholder="Enter your company email"
               name="email"
@@ -185,7 +187,7 @@
             professionals is ready to jump on a call with you to assist you.
           </p>
 
-          <img src="./assets/images/woman.png" alt="" style="width: 100%" />
+          <img src="./assets/images/woman.png" alt="woman"/>
         </div>
 
         <div class="section-left mobile">
@@ -217,7 +219,6 @@
           <img
             src="./assets/images/total-employee.png"
             alt="tags"
-            style="width: 100%"
           />
         </div>
 
@@ -342,6 +343,7 @@
                 </div>
                 <div>
                   <input
+                    id="email"
                     type="email"
                     class="form-input"
                     placeholder="Email address"
@@ -404,6 +406,26 @@
           modal.style.display = "none";
           // document.body.style.overflow = "auto";
         }
+      };
+
+      const heroForm = document.getElementById("hero-form");
+
+      const waitlistForm = document.getElementById("join-waitlist");
+
+      var emailField = document.getElementById("email");
+
+      waitlistForm.onsubmit = function (event) {
+        event.preventDefault();
+        emailField.value = document.getElementById("waitlist-email").value;
+        modal.style.display = "block";
+        waitlistForm.reset()
+      };
+
+      heroForm.onsubmit = function (event) {
+        event.preventDefault();
+        emailField.value = document.getElementById("hero-email").value;
+        modal.style.display = "block";
+        heroForm.reset()
       };
     </script>
   </body>
