@@ -19,6 +19,7 @@ h3,
 h4,
 h5,
 h6,
+form,
 p {
   margin: 0;
 }
@@ -103,6 +104,19 @@ app-input input::placeholder {
 .app-input button {
   margin-left: -132px;
   background-color: #23b78d;
+}
+
+.form-input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 10px;
+  outline: none;
+  appearance: none;
+  border: 2px solid #FFFFFF;
+  background-color: #F5F5F5;
+  font-size: 16px;
+  font-family: Proxima Nova;
+  line-height: 23px;
 }
 
 .main {
@@ -231,7 +245,7 @@ app-input input::placeholder {
 .support-section .section-right.desktop {
   overflow: hidden;
   position: relative;
-  background-color: #FCE8D8;
+  background-color: #fce8d8;
   padding: 40px;
   border-radius: 30px;
   height: 600px;
@@ -286,7 +300,7 @@ app-input input::placeholder {
 }
 
 .support-section .section-right.mobile .text-section {
-  background-color: #FCE8D8;
+  background-color: #fce8d8;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 16px;
@@ -422,6 +436,13 @@ footer .content .footer-menu-content {
   font-weight: 600;
 }
 
+.text-base {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+}
+
 .text-sm {
   font-size: 16px;
   line-height: 23px;
@@ -438,6 +459,72 @@ footer .content .footer-menu-content {
 
 .footer-menu-content a:hover {
   text-decoration: underline;
+}
+
+/* modal styles */
+.modal {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content-wrap {
+  padding: 0 16px;
+  max-width: 340px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.modal-content .modal-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-content .modal-header img {
+  cursor: pointer;
+}
+
+.modal-content .modal-body {
+  margin-top: 10px;
+}
+
+.modal-content .modal-body p {
+  color: #434343;
+}
+
+.modal-content .modal-body form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.modal-content .modal-body form .app-button {
+  background-color: #23B78D;
+  width: 100%;
 }
 
 /* responsiveness */
@@ -593,7 +680,7 @@ footer .content .footer-menu-content {
 
   .support-section .section-right.mobile {
     display: block;
-    background-color: #FCE8D8;
+    background-color: #fce8d8;
     border-radius: 30px;
   }
 

@@ -20,7 +20,7 @@
         <img src="./assets/images/logo.png" alt="archieve" class="logo" />
 
         <div>
-          <button class="app-button">Join Waitlist</button>
+          <button id="modal-button" class="app-button">Join Waitlist</button>
         </div>
       </nav>
 
@@ -174,7 +174,10 @@
     <section>
       <div class="support-section">
         <div class="section-left desktop">
-          <h5 class="text-md">Support, when you<br/> need it</h5>
+          <h5 class="text-md">
+            Support, when you<br />
+            need it
+          </h5>
 
           <p class="text-sm">
             We’ve built achievePayroll so you can run payroll all by yourself.
@@ -186,7 +189,7 @@
         </div>
 
         <div class="section-left mobile">
-          <div class="text-section" style="padding-bottom: 40px;">
+          <div class="text-section" style="padding-bottom: 40px">
             <h5 class="text-md">
               Support,<br />
               when you need it
@@ -199,7 +202,7 @@
             </p>
           </div>
 
-          <img src="./assets/images/woman.png" alt="" style="width: 100%;" />
+          <img src="./assets/images/woman.png" alt="" style="width: 100%" />
         </div>
 
         <div class="section-right desktop">
@@ -214,21 +217,21 @@
           <img
             src="./assets/images/total-employee.png"
             alt="tags"
-            style="width: 100%;"
+            style="width: 100%"
           />
         </div>
 
         <div class="section-right mobile">
           <div class="text-section">
-          <h5 class="text-md">Get valuable HR and Payroll Insights</h5>
+            <h5 class="text-md">Get valuable HR and Payroll Insights</h5>
 
-          <p class="text-sm">
-            One of the easiest ways to to be efficient in today’s competitive
-            environment is by getting valuable personnel and payroll insights
-            for your tools. Utilizing our payroll dashboard and other analytics
-            provides several benefits for your organization.
-          </p>
-        </div>
+            <p class="text-sm">
+              One of the easiest ways to to be efficient in today’s competitive
+              environment is by getting valuable personnel and payroll insights
+              for your tools. Utilizing our payroll dashboard and other
+              analytics provides several benefits for your organization.
+            </p>
+          </div>
           <img
             src="./assets/images/total-employee.png"
             alt="tags"
@@ -246,17 +249,17 @@
       </p>
 
       <div class="users-section-content">
-          <div class="youtube-video">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube-nocookie.com/embed/zvIsH_iKV0o"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+        <div class="youtube-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube-nocookie.com/embed/zvIsH_iKV0o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <!-- <div class="section-right">
           <p class="text-sm">
             The software is easy to use and make payroll preparation stress
@@ -308,5 +311,99 @@
         </div>
       </div>
     </footer>
+
+    <div id="modal" class="modal">
+      <div id="modal-back-drop" class="modal-backdrop">
+        <div class="modal-content-wrap">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="text-base">Join waitlist</h5>
+              <img
+                id="close-modal"
+                src="./assets/icons/close.svg"
+                alt="close"
+                class="close"
+              />
+            </div>
+
+            <div class="modal-body">
+              <p class="text-sm">
+                Be among the first to know when we launch in Nigeria
+              </p>
+
+              <form name="waitlist" netlify>
+                <div>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Full name"
+                    name="fullname"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    class="form-input"
+                    placeholder="Email address"
+                    name="email"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Phone number"
+                    name="phonenumber"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Name of organization"
+                    name="organization"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Number of employees"
+                    name="employess"
+                  />
+                </div>
+
+                <button type="submit" class="app-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("modal");
+
+      var btn = document.getElementById("modal-button");
+
+      var close = document.getElementById("close-modal");
+
+      var modalBackdrop = document.getElementById("modal-back-drop");
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+      };
+
+      close.onclick = function () {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modalBackdrop) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
