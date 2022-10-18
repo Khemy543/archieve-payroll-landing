@@ -38,7 +38,6 @@ section {
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 216px;
   padding: 0 16px;
 }
 
@@ -174,7 +173,11 @@ app-input input::placeholder {
   width: 100%;
   display: flex;
   column-gap: 50px;
-  margin-top: 512px;
+  margin-top: 412px;
+}
+
+.support-section {
+  margin-top: 100px;
 }
 
 .services-section .section-left .app-input {
@@ -222,25 +225,37 @@ app-input input::placeholder {
   );
   padding: 40px;
   border-radius: 30px;
+  height: 600px;
+}
+
+.support-section .section-right.desktop {
+  overflow: hidden;
+  position: relative;
+  background-color: #FCE8D8;
+  padding: 40px;
+  border-radius: 30px;
+  height: 600px;
 }
 
 .support-section .section-left h5 {
   margin-bottom: 23px;
 }
 
-.support-section .section-right {
-  background-color: #f5f5f5;
-  border-radius: 30px;
-  padding: 40px;
-}
-
-.support-section .section-right img {
-  margin-right: -40px;
-  margin-bottom: -40px;
-}
-
 .support-section .section-right h5 {
   margin-bottom: 23px;
+}
+
+/* .support-section .section-right {
+  background-color: #FCE8D8;
+  border-radius: 30px;
+  padding: 40px;
+} */
+
+.support-section .section-right.desktop img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .support-section .section-left.desktop img {
@@ -251,6 +266,10 @@ app-input input::placeholder {
 }
 
 .support-section .section-left.mobile {
+  display: none;
+}
+
+.support-section .section-right.mobile {
   display: none;
 }
 
@@ -266,10 +285,21 @@ app-input input::placeholder {
   padding: 16px;
 }
 
+.support-section .section-right.mobile .text-section {
+  background-color: #FCE8D8;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 16px;
+}
+
 .support-section .section-left.mobile img {
   position: static;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.support-section .section-right.mobile img {
+  position: static;
 }
 
 .join-waitlist {
@@ -553,12 +583,18 @@ footer .content .footer-menu-content {
     display: none;
   }
 
+  .support-section .section-right.desktop {
+    display: none;
+  }
+
   .support-section .section-left.mobile {
     display: block;
   }
 
-  .support-section .section-right {
-    padding: 16px;
+  .support-section .section-right.mobile {
+    display: block;
+    background-color: #FCE8D8;
+    border-radius: 30px;
   }
 
   .join-waitlist .join-waitlist-content {
