@@ -485,10 +485,9 @@ footer .content .footer-menu-content {
 
 .modal-content-wrap {
   padding: 16px;
-  max-width: 380px;
+  max-width: 374px;
   margin: 0 auto;
   position: relative;
-  width: 100%;
 }
 
 .modal-content {
