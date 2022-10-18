@@ -234,6 +234,11 @@ app-input input::placeholder {
   padding: 40px;
 }
 
+.support-section .section-right img {
+  margin-right: -40px;
+  margin-bottom: -40px;
+}
+
 .support-section .section-right h5 {
   margin-bottom: 23px;
 }
@@ -305,17 +310,14 @@ app-input input::placeholder {
 
 .users-section h4 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .users-section .desc {
   width: 286px;
+  margin: 0 auto;
   margin-bottom: 30px;
-}
-
-.users-section .users-section-content {
-  display: flex;
-  column-gap: 142px;
-  align-items: center;
+  text-align: center;
 }
 
 .users-section .users-section-content .section-right .client {
@@ -345,7 +347,9 @@ app-input input::placeholder {
 
 .users-section .users-section-content .youtube-video {
   background-color: #f0f0f0;
-  height: 403px;
+  height: 670px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 footer {
