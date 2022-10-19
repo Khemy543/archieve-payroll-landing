@@ -24,21 +24,21 @@ p {
   margin: 0;
 }
 
-nav {
-  display: flex;
-  max-width: 1152px;
-  justify-content: space-between;
+.container {
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
   padding: 10px 16px;
   position: relative;
   z-index: 20;
 }
 
 section {
-  max-width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 16px;
 }
 
@@ -176,7 +176,7 @@ app-input input::placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -150px;
+  bottom: -30%;
 }
 
 .hero-mobile-wrapper {
@@ -256,12 +256,6 @@ app-input input::placeholder {
   margin-bottom: 23px;
 }
 
-/* .support-section .section-right {
-  background-color: #FCE8D8;
-  border-radius: 30px;
-  padding: 40px;
-} */
-
 .support-section .section-right.desktop img {
   position: absolute;
   bottom: 0;
@@ -317,9 +311,6 @@ app-input input::placeholder {
 }
 
 .join-waitlist {
-  max-width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 100px;
   padding: 0 16px;
 }
@@ -345,9 +336,6 @@ app-input input::placeholder {
 }
 
 .users-section {
-  max-width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 100px;
   padding: 0 16px;
 }
@@ -402,8 +390,6 @@ footer {
 }
 
 footer .content {
-  max-width: 1152px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 35px 16px;
@@ -528,7 +514,11 @@ footer .content .footer-menu-content {
 }
 
 /* responsiveness */
+
 @media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 1152px;
+  }
   /* .hero-content-wrap {
     flex-direction: column;
     column-gap: 0;
