@@ -187,7 +187,7 @@
             professionals is ready to jump on a call with you to assist you.
           </p>
 
-          <img src="./assets/images/woman.png" alt="woman"/>
+          <img src="./assets/images/woman.png" alt="woman" />
         </div>
 
         <div class="section-left mobile">
@@ -216,10 +216,7 @@
             for your tools. Utilizing our payroll dashboard and other analytics
             provides several benefits for your organization.
           </p>
-          <img
-            src="./assets/images/total-employee.png"
-            alt="tags"
-          />
+          <img src="./assets/images/total-employee.png" alt="tags" />
         </div>
 
         <div class="section-right mobile">
@@ -396,20 +393,27 @@
 
       var modalBackdrop = document.getElementById("modal-back-drop");
 
-      btn.onclick = function () {
+      function openModal() {
         modal.style.display = "block";
         document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      btn.onclick = function () {
+        openModal();
       };
 
       close.onclick = function () {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
+        closeModal();
       };
 
       window.onclick = function (event) {
         if (event.target == modalBackdrop) {
-          modal.style.display = "none";
-          document.body.style.overflow = "auto";
+         closeModal()
         }
       };
 
@@ -422,15 +426,15 @@
       waitlistForm.onsubmit = function (event) {
         event.preventDefault();
         emailField.value = document.getElementById("waitlist-email").value;
-        modal.style.display = "block";
-        waitlistForm.reset()
+        openModal();
+        waitlistForm.reset();
       };
 
       heroForm.onsubmit = function (event) {
         event.preventDefault();
         emailField.value = document.getElementById("hero-email").value;
-        modal.style.display = "block";
-        heroForm.reset()
+        openModal();
+        heroForm.reset();
       };
     </script>
   </body>
