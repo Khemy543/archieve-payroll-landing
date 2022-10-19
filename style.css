@@ -466,7 +466,6 @@ footer .content .footer-menu-content {
   bottom: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  overflow-y: auto;
 }
 
 .modal-content-wrap {
@@ -474,6 +473,7 @@ footer .content .footer-menu-content {
   max-width: 374px;
   margin: 0 auto;
   position: relative;
+  overflow-y: auto;
 }
 
 .modal-content {
