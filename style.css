@@ -671,8 +671,8 @@ footer .content .footer-menu-content {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -320px;
-    max-width: 1024px;
+    bottom: 0;
+    max-width: 100%;
   }
   .hero-image-mobile {
     width: 100%;
@@ -739,8 +739,8 @@ footer .content .footer-menu-content {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -50px;
-    max-width: 1024px;
+    bottom: 0;
+    max-width: 100%;
     padding: 0 16px;
   }
 
