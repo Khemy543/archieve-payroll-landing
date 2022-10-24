@@ -354,7 +354,8 @@ app-input input::placeholder {
 } 
 .users-section-content {
   display: flex;
-  column-gap: 40px;
+  column-gap: 142px;
+  align-items: center;
 }
 .users-section .users-section-content .section-right .client {
   margin-top: 40px;
@@ -386,7 +387,7 @@ app-input input::placeholder {
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
-  height: 500px;
+  height: 403px;
 }
 
 footer {
