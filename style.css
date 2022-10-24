@@ -211,6 +211,7 @@ app-input input::placeholder {
 
 .services-section .section-right img {
   width: 100%;
+  border-radius: 30px;
 }
 
 .icon-wrap {
