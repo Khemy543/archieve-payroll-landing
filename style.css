@@ -680,6 +680,9 @@ footer .content .footer-menu-content {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    max-width: 100%;
+  }
   .container {
     padding: 0 16px;
   }
