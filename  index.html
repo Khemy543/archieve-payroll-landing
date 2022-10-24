@@ -143,7 +143,7 @@
           </form> -->
         </div>
         <div class="section-right">
-          <img src="./assets/images/service3-min.jpeg" alt="service" />
+          <img src="./assets/images/service2-min.jpeg" alt="service" />
         </div>
       </div>
     </section>
@@ -276,31 +276,37 @@
               title="slide3"
               class="slider__nav"
             />
+            <input
+              type="radio"
+              name="slider"
+              title="slide4"
+              class="slider__nav"
+            />
             <div class="slider__inner">
               <div class="slider__contents">
                 <p class="text-sm">
-                  The software is easy to use and make payroll preparation
-                  stress free. Also, within a minute, it distributes payslips to
-                  employees through email and SMS platforms embedded in the
-                  software. It automatically generates GRA PAYE report, SSNIT
-                  contribution report. it is secure and cost-effective (free)
-                  payroll software. Airport West Hotel is very satisfied with
-                  achievePayroll as it meets all our payroll challenges and is
-                  well-formulated in accordance with all relevant laws and
-                  regulations of Ghana. We are happy therefore to recommend
-                  achievePayroll to any organisation in need of payroll and HR
-                  software.
+                  "In over 30 years of practice as an auditor and an accountant,
+                  I have processed payrolls of varying degrees of complexity for
+                  several organisations using different payroll applications,
+                  tools and mechanisms. My recent experience with Achieve
+                  Payroll leaves me in no doubt that, with all the features and
+                  functionality of a well-thought-through programme,
+                  incorporating comprehensive statutory reporting,
+                  achievePayroll has finally made payroll processing a
+                  pleasurable exercise. The post-onboarding support service is
+                  exceptional."
                 </p>
                 <div class="client">
                   <img
-                    src="./assets/images/client-image.png"
+                    src="https://achievepayroll.com/wp-content/uploads/2021/12/ben-150x150.jpg"
                     class="image"
                     alt="client"
                   />
                   <div class="client-info">
-                    <h5 class="text-sm">Divine Amekudzi, Ghana</h5>
+                    <h5 class="text-sm">Benjamin Ayikai Adamafio, Ghana</h5>
                     <p class="text-xs">
-                      Head of Accounts & Finance - Airport West Hotel
+                      Managing Partner AYK Associates Chartered Accountants and
+                      Management Consultants
                     </p>
                   </div>
                 </div>
@@ -337,29 +343,60 @@
 
               <div class="slider__contents">
                 <p class="text-sm">
-                  The software is easy to use and make payroll preparation
-                  stress free. Also, within a minute, it distributes payslips to
-                  employees through email and SMS platforms embedded in the
-                  software. It automatically generates GRA PAYE report, SSNIT
-                  contribution report. it is secure and cost-effective (free)
-                  payroll software. Airport West Hotel is very satisfied with
-                  achievePayroll as it meets all our payroll challenges and is
-                  well-formulated in accordance with all relevant laws and
-                  regulations of Ghana. We are happy therefore to recommend
-                  achievePayroll to any organisation in need of payroll and HR
-                  software.
+                  Our company got introduced to achieve payroll, and I was
+                  excited about the idea to have a system-generated payroll
+                  system. It was easy to get on board, and within a day, I had
+                  processed payroll and issued out payslips. Achievepayroll has
+                  made my life so much easier. I went from spending hours to
+                  only 5-10 minutes in payroll processing. I like how
+                  achievePayroll is all integrated and connected. The most
+                  fascinating feature is the ability to issue secured pay slips
+                  to both mobile phones and emails. There is no requirement to
+                  print, and it makes it environment friendly as against our
+                  previous payslip process. I am enjoying using the system as an
+                  accountant and look forward to more features being introduced
+                  like leave tracking."
                 </p>
                 <div class="client">
                   <img
-                    src="./assets/images/client-image.png"
+                    src="https://achievepayroll.com/wp-content/uploads/2021/12/dafina-300x300.png"
                     class="image"
                     alt="client"
                   />
                   <div class="client-info">
-                    <h5 class="text-sm">Divine Amekudzi, Ghana</h5>
+                    <h5 class="text-sm">Dafina Ocran, Ghana</h5>
                     <p class="text-xs">
-                      Head of Accounts & Finance - Airport West Hotel
+                      Finance & Compliance -Southey Contracting
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__contents">
+                <p class="text-sm">
+                  “achievePayroll is everything every company needs. It is so
+                  user-friendly, and it can be customized to suit any
+                  organization despite how complex your payroll is. I used to
+                  have payslips issues because a lot of my employees are in the
+                  remote part of Ghana without internet access. The best way out
+                  for them to receive their payslips was by SMS but my current
+                  payroll software did not have that setup. Achievepayroll
+                  brought an end to my woes; just a click and payslips are
+                  distributed to all staff. I introduced it to a Consulting
+                  firm, and they straight away fell in love with the software. I
+                  have been exposed to several payroll software per my role, but
+                  I will choose Achievepayroll over all others. Try it too and
+                  thank me later! Warm Regards !”
+                </p>
+                <div class="client">
+                  <img
+                    src="https://achievepayroll.com/wp-content/uploads/2021/12/71A067A9-7D7A-4D7B-A14E-3315F1E9D107-150x150.jpeg"
+                    class="image"
+                    alt="client"
+                  />
+                  <div class="client-info">
+                    <h5 class="text-sm">Ivy Tetteh-Odjidja - Ghana</h5>
+                    <p class="text-xs">ACIHRM , HR Manager</p>
                   </div>
                 </div>
               </div>
@@ -465,6 +502,23 @@
       </div>
     </div>
     <script>
+      const inputs = document.getElementsByClassName("slider__nav");
+
+      async function playSlider() {
+        for (const n in inputs) {
+          const res = await checkInput(n);
+          console.log(res)
+        }
+      }
+
+      function checkInput(n) {
+        setTimeout(() => {
+          return inputs[n];
+        }, 3000);
+      }
+
+      playSlider();
+
       var modal = document.getElementById("modal");
 
       var btn = document.getElementById("modal-button");
