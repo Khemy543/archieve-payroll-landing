@@ -126,8 +126,8 @@ app-input input::placeholder {
 }
 
 .hero {
-  padding-top: 5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .hero-content {
@@ -170,7 +170,7 @@ app-input input::placeholder {
   width: 100%;
   display: flex;
   column-gap: 50px;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .support-section {
@@ -427,6 +427,11 @@ footer .content .footer-menu-content {
 }
 
 .footer-menu-content a:hover {
+  text-decoration: underline;
+}
+
+footer p a {
+  color: black;
   text-decoration: underline;
 }
 
