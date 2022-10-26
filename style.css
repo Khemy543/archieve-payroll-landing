@@ -71,6 +71,12 @@ nav {
   cursor: pointer;
 }
 
+
+.app-button i {
+  margin-left: 5px;
+  display: none;
+}
+
 .app-input {
   display: flex;
 }
@@ -123,6 +129,10 @@ app-input input::placeholder {
 .main {
   width: 100%;
   background-color: #23b78d;
+}
+
+.logo {
+  height: 50px;
 }
 
 .hero {
@@ -637,10 +647,6 @@ footer p a {
     font-size: 15px;
     line-height: 21px;
   }
-  .hero-content {
-    height: auto;
-    padding-top: 40px;
-  }
 
   .hero-image-wrapper {
     display: none;
@@ -661,6 +667,10 @@ footer p a {
   }
   .hero-image-mobile {
     width: 100%;
+  }
+
+  .hero-content {
+    padding-bottom: 5rem;
   }
 }
 
