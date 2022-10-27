@@ -675,6 +675,9 @@ footer p a {
 }
 
 @media (max-width: 768px) {
+  .hero-text-content form {
+    max-width: 100%;
+  }
   .slider {
     height: 523px;
   }
@@ -730,7 +733,10 @@ footer p a {
   .hero-content {
     height: auto;
     padding-top: 50px;
+    text-align: center;
   }
+
+  
 
   .support-section .section-left {
     height: 720px;
@@ -764,6 +770,14 @@ footer p a {
     flex-direction: column;
     column-gap: 0;
     row-gap: 40px;
+  }
+
+  .services-section .section-left h4 {
+    text-align: center;
+  }
+
+  .services-section .section-left p {
+    text-align: center;
   }
 
   .support-section {
